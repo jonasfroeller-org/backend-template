@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "drizzle-kit": "^0.21.2",
+    "drizzle-orm": "^0.30.10",
+    "pg": "^8.11.5"
+  },
+  "scripts": {
+    "schema:push": "drizzle-kit push:pg --config ../drizzle.config.ts",
+    "schema:pull": "drizzle-kit introspect:pg --config ../drizzle.config.ts",
+    "drizzle:studio": "drizzle-kit studio --config ../drizzle.config.ts --host 127.0.0.1",
+    "drizzle:help": "drizzle-kit help"
+  }
+}
