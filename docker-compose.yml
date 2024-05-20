@@ -12,3 +12,12 @@ services:
     ports: ["3000:3000"]
     # setup a host mounted volume to sync changes to the container
     volumes: ["./:/home/bun/app"]
+  database:
+      image: postgres:12.18
+      container_name: backend-database
+      environment:
+          POSTGRES_DB: db
+          POSTGRES_USER: username
+          POSTGRES_PASSWORD: password
+      ports:
+          - "6942:5432"

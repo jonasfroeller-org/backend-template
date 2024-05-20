@@ -2,6 +2,13 @@
 
 ## Development
 
+### Compose Development Environment
+
+To start the development (server and database) environment run:
+```bash
+docker-compose up -d --remove-orphans
+```
+
 ### Rest-API-Server
 
 To start the development server run:
